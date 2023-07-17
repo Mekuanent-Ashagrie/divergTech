@@ -651,14 +651,13 @@
                 return false;
             });
 
-
         }
 
         if ($('.slider-three').length) {
             $('.slider-three').vegas({
                 slides: [
-                    { src: "assets/images/slider-3-1.jpg" },
-                    { src: "assets/images/slider-3-2.jpg" }
+                    { src: "{% static 'website/assets/images/banner.jpg'%}" },
+                    { src: "{% static 'website/assets/images/banner.jpg'%}" }
                 ],
                 transition: 'slideDown2',
                 timer: false

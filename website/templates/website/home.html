@@ -33,19 +33,19 @@
 <body>
     <div class="preloader"><span></span></div><!-- /.preloader -->
     <div class="page-wrapper">
-        <div class="topbar-one">
-            <div class="container">
-                <div class="topbar-one__left">
-                    <a href="#">info@divergent-techs.com</a>
-                    <a href="#">+2519-4522-4486</a>
-                </div><!-- /.topbar-one__left -->
-                <div class="topbar-one__right">
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
-                </div><!-- /.topbar-one__right -->
-            </div><!-- /.container -->
-        </div><!-- /.topbar-one -->
-        <header class="site-header site-header__header-one ">
+        <header class="site-header site-header__home-three ">
+            <div class="topbar-one">
+                <div class="container">
+                    <div class="topbar-one__left">
+                        <a href="#">info@divergent-techs.com</a>
+                        <a href="#">+2519-4522-4486</a>
+                    </div><!-- /.topbar-one__left -->
+                    <div class="topbar-one__right">
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                    </div><!-- /.topbar-one__right -->
+                </div><!-- /.container -->
+            </div><!-- /.topbar-one -->
             <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
                 <div class="container clearfix">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,12 +53,6 @@
                         <a class="navbar-brand" href="index.html">
                             <img src="{% static 'website/assets/images/logo.png'%}" class="main-logo" width="128" alt="Awesome Image" />
                         </a>
-                        <div class="header__social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div><!-- /.header__social -->
                         <button class="menu-toggler" data-target=".main-navigation">
                             <span class="kipso-icon-menu"></span>
                         </button>
@@ -73,19 +67,20 @@
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="sub-menu">
-                                    <li><a href="about.html">Software Development</a></li>
-                                    <li><a href="gallery.html">Infrastructure</a></li>
-                                    <li><a href="pricing.html">Training and Consultancy</a></li>
+                                    <li><a href="development.html">Software Development</a></li>
+                                    <li><a href="infrastructure.html">Infrastructure</a></li>
+                                    <li><a href="trainings.html">Training and Consultancy</a></li>
+                                    <li><a href="exams.html">National Exams</a></li>
                                 </ul><!-- /.sub-menu -->
-                            </li>
-                            <li>
-                                <a href="courses.html">Courses</a>                               
                             </li>
                             <li>
                                 <a href="teachers.html">Staffs</a>                               
                             </li>
                             <li>
-                                <a href="news.html">News</a>                               
+                                <a href="events.html">Events</a>                               
+                            </li>
+                            <li>
+                                <a href="partners.html">Partners</a>                               
                             </li>
                             <li>
                                 <a href="contact.html">Contact</a>
@@ -93,84 +88,47 @@
                         </ul>
                     </div><!-- /.navbar-collapse -->
                     <div class="right-side-box">
-                        <a class="header__search-btn search-popup__toggler" href="#"><i class="kipso-icon-magnifying-glass"></i>
-                            <!-- /.kipso-icon-magnifying-glass --></a>
+                        <div class="header__social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div><!-- /.header__social -->
                     </div><!-- /.right-side-box -->
                 </div>
                 <!-- /.container -->
             </nav>
-            <div class="site-header__decor">
-                <div class="site-header__decor-row">
-                    <div class="site-header__decor-single">
-                        <div class="site-header__decor-inner-1"></div><!-- /.site-header__decor-inner -->
-                    </div><!-- /.site-header__decor-single -->
-                    <div class="site-header__decor-single">
-                        <div class="site-header__decor-inner-2"></div><!-- /.site-header__decor-inner -->
-                    </div><!-- /.site-header__decor-single -->
-                    <div class="site-header__decor-single">
-                        <div class="site-header__decor-inner-3"></div><!-- /.site-header__decor-inner -->
-                    </div><!-- /.site-header__decor-single -->
-                </div><!-- /.site-header__decor-row -->
-            </div><!-- /.site-header__decor -->
         </header><!-- /.site-header -->
-        <div class="banner-wrapper">
-            <section class="banner-one banner-carousel__one no-dots owl-theme owl-carousel">
-                <div class="banner-one__slide banner-one__slide-one">
-                    <div class="container">
-                        <div class="banner-one__bubble-1"></div><!-- /.banner-one__bubble- -->
-                        <div class="banner-one__bubble-2"></div><!-- /.banner-one__bubble- -->
-                        <div class="banner-one__bubble-3"></div><!-- /.banner-one__bubble- -->
-                        <img src="{% static 'website/assets/images/slider-1-scratch.png'%}" alt="" class="banner-one__scratch">
-                        <img src="{% static 'website/assets/images/slider-1-person-1.png'%}" class="banner-one__person" alt="">
-                        <div class="row no-gutters">
-                            <div class="col-xl-12">
-                                <h3 class="banner-one__title banner-one__light-color">Tech <br>
-                                    Solutions</h3><!-- /.banner-one__title -->
-                                <p class="banner-one__tag-line">are you ready to learn?</p><!-- /.banner-one__tag-line -->
-                                <a href="#" class="thm-btn banner-one__btn">Learn More</a>
-                            </div><!-- /.col-xl-12 -->
-                        </div><!-- /.row -->
-                    </div><!-- /.container -->
-                </div><!-- /.banner-one__slide -->
-                <div class="banner-one__slide banner-one__slide-two">
-                    <div class="container">
-                        <div class="banner-one__bubble-1"></div><!-- /.banner-one__bubble- -->
-                        <div class="banner-one__bubble-2"></div><!-- /.banner-one__bubble- -->
-                        <div class="banner-one__bubble-3"></div><!-- /.banner-one__bubble- -->
-                        <img src="{% static 'website/assets/images/slider-1-scratch.png'%}" alt="" class="banner-one__scratch">
-                        <img src="{% static 'website/assets/images/slider-1-person-2.png'%}" class="banner-one__person" alt="">
-                        <div class="row no-gutters">
-                            <div class="col-xl-12">
-                                <h3 class="banner-one__title banner-one__light-color">Advanced <br>
-                                    Trainings</h3><!-- /.banner-one__title -->
-                                <p class="banner-one__tag-line">are you ready to learn?</p><!-- /.banner-one__tag-line -->
-                                <a href="#" class="thm-btn banner-one__btn">Learn More</a>
-                            </div><!-- /.col-xl-12 -->
-                        </div><!-- /.row -->
-                    </div><!-- /.container -->
-                </div><!-- /.banner-one__slide -->
-            </section><!-- /.banner-one -->
-            <div class="banner-carousel-btn">
-                <a href="#" class="banner-carousel-btn__left-btn"><i class="kipso-icon-left-arrow"></i></a>
-                <a href="#" class="banner-carousel-btn__right-btn"><i class="kipso-icon-right-arrow"></i></a>
-            </div><!-- /.banner-carousel-btn -->
-            <div class="banner-one__cta">
-                <div class="banner-one__cta-icon">
-                    <i class="kipso-icon-black-graduation-cap-tool-of-university-student-for-head"></i>
-                    <!-- /.kipso-icon-knowledge -->
-                </div><!-- /.banner-one__cta-icon -->
-                <div class="banner-one__cta-title">
-                    <h3 class="banner-one__cta-text"><a href="#">Read how we approach a problem</a></h3><!-- /.banner-one__cta-text -->
-                </div><!-- /.banner-one__cta-title -->
-                <div class="banner-one__cta-link">
-                    <a href="#"><i class="kipso-icon-right-arrow"></i><!-- /.kipso-icon-right-arrow --></a>
-                </div><!-- /.banner-one__cta-link -->
-            </div><!-- /.banner-one__cta -->
-        </div><!-- /.banner-wrapper -->
+        <section class="slider-three">
+            <img src="{% static 'website/assets/images/slider-3-icon-1-1.png'%}" class="slider-three__icon-1" alt="">
+            <img src="{% static 'website/assets/images/slider-3-icon-1-2.png'%}" class="slider-three__icon-2" alt="">
+            <img src="{% static 'website/assets/images/slider-3-icon-1-3.png'%}" class="slider-three__icon-3" alt="">
+            <img src="{% static 'website/assets/images/slider-3-icon-1-4.png'%}" class="slider-three__icon-4" alt="">
+            <img src="{% static 'website/assets/images/slider-3-icon-1-5.png'%}" class="slider-three__icon-5" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="slider-three__content">
+                            <p class="slider-three__tag-line">we can teach you anything</p><!-- /.slider-three__tag-line -->
+                            <h2 class="slider-three__title">Start learning
+                                with us now</h2><!-- /.slider-three__title -->
+                            <p class="slider-three__text">You need to be sure there isn't anything hidden in the middle of text
+                                lorem ipsum on the Internet.</p><!-- /.slider-three__text -->
+                            <form action="#" class="slider-three__search">
+                                <input type="text" placeholder="Search courses">
+                                <button type="submit"><i class="kipso-icon-magnifying-glass"></i>
+                                    <!-- /.kipso-icon-magnifying-glass --></button>
+                            </form><!-- /.slider-three__search -->
+                        </div><!-- /.slider-three__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.slider-three -->
+
         <section class="about-two">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-8">
                         <div class="about-two__content">
                             <div class="block-title text-left">
                                 <h2 class="block-title__title">Welcome to Divergent <br>
@@ -184,8 +142,7 @@
                                         <i class="kipso-icon-professor"></i><!-- /.kipso-icon-professor -->
                                     </div><!-- /.about-two__single-icon -->
                                     <div class="about-two__single-content">
-                                        <p class="about-two__single-text">Start learning from
-                                            our experts</p><!-- /.about-two__single-text -->
+                                        <p class="about-two__single-text">Smart Systems</p><!-- /.about-two__single-text -->
                                     </div><!-- /.about-two__single-content -->
                                 </div><!-- /.about-two__single -->
                                 <div class="about-two__single">
@@ -193,21 +150,38 @@
                                         <i class="kipso-icon-knowledge"></i><!-- /.kipso-icon-professor -->
                                     </div><!-- /.about-two__single-icon -->
                                     <div class="about-two__single-content">
-                                        <p class="about-two__single-text">Enhance your skills
-                                            with us now</p><!-- /.about-two__single-text -->
+                                        <p class="about-two__single-text">Training and consultency</p><!-- /.about-two__single-text -->
+                                    </div><!-- /.about-two__single-content -->
+                                </div><!-- /.about-two__single -->
+                            </div><!-- /.about-two__single-wrap -->
+                            <div class="about-two__single-wrap">
+                                <div class="about-two__single">
+                                    <div class="about-two__single-icon">
+                                        <i class="kipso-icon-professor"></i><!-- /.kipso-icon-professor -->
+                                    </div><!-- /.about-two__single-icon -->
+                                    <div class="about-two__single-content">
+                                        <p class="about-two__single-text">Infrastructure</p><!-- /.about-two__single-text -->
+                                    </div><!-- /.about-two__single-content -->
+                                </div><!-- /.about-two__single -->
+                                <div class="about-two__single">
+                                    <div class="about-two__single-icon">
+                                        <i class="kipso-icon-knowledge"></i><!-- /.kipso-icon-professor -->
+                                    </div><!-- /.about-two__single-icon -->
+                                    <div class="about-two__single-content">
+                                        <p class="about-two__single-text">Skill Test</p><!-- /.about-two__single-text -->
                                     </div><!-- /.about-two__single-content -->
                                 </div><!-- /.about-two__single -->
                             </div><!-- /.about-two__single-wrap -->
                             <a href="#" class="thm-btn">Learn More</a><!-- /.thm-btn -->
                         </div><!-- /.about-two__content -->
                     </div><!-- /.col-lg-6 -->
-                    <div class="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
+                    <div class="col-xl-4 d-flex">
                         <div class="about-two__image">
                             <span class="about-two__image-dots"></span><!-- /.about-two__image-dots -->
                             <img src="{% static 'website/assets/images/download-images.jpeg' %}" alt="">
                             <div class="about-two__count">
                                 <div class="about-two__count-text">Trusted by
-                                    <span class="counter">80</span></div><!-- /.about-two__count-text -->
+                                    <span class="counter">12</span></div><!-- /.about-two__count-text -->
                             </div><!-- /.about-two__count -->
                         </div><!-- /.about-two__image -->
                     </div><!-- /.col-lg-6 -->
@@ -218,7 +192,7 @@
             <div class="container">
                 <div class="block-title mb-0">
                     <h2 class="block-title__title">Explore our <br>
-                        popular courses</h2><!-- /.block-title__title -->
+                        popular trainings</h2><!-- /.block-title__title -->
                 </div><!-- /.block-title -->
             </div><!-- /.container -->
             <div class="course-one__top-title__curve"></div><!-- /.course-one__top-title__curve -->
@@ -271,14 +245,14 @@
         </section><!-- /.course-one course-page -->
         <section class="video-two">
             <div class="container">
-                <img src="{% static 'website/assets/images/scratch-1-1.png' %}" class="video-two__scratch" alt="">
+                <img src="{% static 'website/assets/images/slider-1-scratch.png'%}" class="video-two__scratch" alt="">
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="video-two__content">
                             <h2 class="video-two__title">Test Your <br>
                                 knowledge & skill <br>
                                on our platform</h2><!-- /.video-two__title -->
-                            <a href="#" class="thm-btn">Take Exam</a><!-- /.thm-btn -->
+                            <a href="http://www.exams.et" class="thm-btn">Take Exam</a><!-- /.thm-btn -->
                         </div><!-- /.video-two__content -->
                     </div><!-- /.col-lg-7 -->
                     <div class="col-lg-5 d-flex justify-content-lg-end justify-content-sm-start">
@@ -296,23 +270,18 @@
                     <div class="col-lg-6">
                         <div class="countdown-one__content">
                             <h2 class="countdown-one__title">Register now </h2><!-- /.countdown-one__title -->
-                            <p class="countdown-one__tag-line">get 25% discounts</p>
+                            <p class="countdown-one__tag-line">Premium membership</p>
                             <!-- /.countdown-one__tag-line -->
-                            <p class="countdown-one__text">Lorem ipsum gravida nibh vel velit auctor aliquetnean sollicitudin,
-                                lorem
-                                quis bibendum auci elit consequat is simply free text available in the psutis sem nibh id eis
-                                sed
-                                odio sit amet.</p><!-- /.countdown-one__text -->
-                            <ul class="countdown-one__list list-unstyled">
-                                <!-- content loading via js -->
-                            </ul><!-- /.coundown-one__list -->
+                            <p class="countdown-one__text">Register to get the maximum from our services. 
+                                Send us your comments and queries and we will reply you will the best we could offer.</p><!-- /.countdown-one__text -->
+                           
                         </div><!-- /.countdown-one__content -->
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <div class="become-teacher__form">
                             <div class="become-teacher__form-top">
                                 <h2 class="become-teacher__form-title">
-                                    Get discount voucher
+                                    Become a premium member
                                 </h2><!-- /.become-teacher__form-title -->
                             </div><!-- /.become-teacher__top -->
                             <form action="assets/inc/sendemail.php" class="become-teacher__form-content contact-form-validated">
@@ -331,8 +300,7 @@
         <section class="thm-gray-bg course-category-one">
             <div class="container-fluid text-center">
                 <div class="block-title text-center">
-                    <h2 class="block-title__title">Browse online <br>
-                        course categories</h2><!-- /.block-title__title -->
+                    <h2 class="block-title__title">Our Smart Solutions</h2><!-- /.block-title__title -->
                 </div><!-- /.block-title -->
                 <div class="course-category-one__carousel owl-carousel owl-theme">
                     <div class="item">
@@ -427,39 +395,36 @@
                     </div><!-- /.item -->
                 </div><!-- /.course-category-one__carousel owl-carousel owl-theme -->
 
-                <a href="#" class="thm-btn">View All Categories</a><!-- /.thm-btn -->
+                <a href="#" class="thm-btn">View All</a><!-- /.thm-btn -->
             </div><!-- /.container-fluid -->
         </section><!-- /.thm-gray-bg course-category-one -->
         <section class="cta-three">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 clearfix">
-                        <img src="assets/images/cta-1.jpg" class="cta-three__image" alt="">
+                    <div class="col-lg-5 clearfix">
+                        <img src="{% static 'website/assets/images/network.png' %}" class="cta-three__image" alt="">
                     </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <div class="cta-three__content">
                             <div class="block-title text-left">
-                                <h2 class="block-title__title">Benefits of learning
-                                    with kipso</h2><!-- /.block-title__title -->
+                                <h2 class="block-title__title">Network Infrastructures</h2><!-- /.block-title__title -->
                             </div><!-- /.block-title -->
-                            <p class="cta-three__text">There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs
-                                condmentum leo massa mollis estiegittis miristum nulla sed medy fringilla vitae.</p>
+                            <p class="cta-three__text">We design and build small to large scale network infrastructures for different bussineses.
+                                We deliver state-of-the-art network devices form internationally known providers with whome we have a strong partnership
+                            </p>
                             <!-- /.cta-three__text -->
                             <div class="cta-three__single-wrap">
                                 <div class="cta-three__single">
                                     <i class="kipso-icon-strategy"></i><!-- /.kipso-icon-strategy -->
-                                    <p class="cta-three__single-text">Professional
-                                        Courses</p><!-- /.cta-three__single-text -->
+                                    <p class="cta-three__single-text">Network Design</p><!-- /.cta-three__single-text -->
                                 </div><!-- /.cta-three__single -->
                                 <div class="cta-three__single">
                                     <i class="kipso-icon-training"></i><!-- /.kipso-icon-training -->
-                                    <p class="cta-three__single-text">Live
-                                        Learning</p><!-- /.cta-three__single-text -->
+                                    <p class="cta-three__single-text">Installation and configuration</p><!-- /.cta-three__single-text -->
                                 </div><!-- /.cta-three__single -->
                                 <div class="cta-three__single">
                                     <i class="kipso-icon-human-resources"></i><!-- /.kipso-icon-human-resources -->
-                                    <p class="cta-three__single-text">Expert
-                                        Teachers</p><!-- /.cta-three__single-text -->
+                                    <p class="cta-three__single-text">Support and Maintenance</p><!-- /.cta-three__single-text -->
                                 </div><!-- /.cta-three__single -->
                             </div><!-- /.cta-three__single-wrap -->
                             <a href="#" class="thm-btn">Learn More</a><!-- /.thm-btn -->
@@ -471,8 +436,7 @@
         <section class="blog-two">
             <div class="container">
                 <div class="block-title text-center">
-                    <h2 class="block-title__title">Our latest news <br>
-                        & articles</h2><!-- /.block-title__title -->
+                    <h2 class="block-title__title">latest Events</h2><!-- /.block-title__title -->
                 </div><!-- /.block-title -->
                 <div class="blog-two__carousel owl-carousel owl-theme">
                     <div class="item">
@@ -638,68 +602,183 @@
                 </div><!-- /.block-title -->
                 <div class="brand-one__carousel owl-carousel owl-theme">
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                     <div class="item">
-                        <img src="assets/images/brand-1-1.png" alt="">
+                        <img src="{% static 'website/assets/images/brand-1-1.png'%}" alt="">
                     </div><!-- /.item -->
                 </div><!-- /.brand-one__carousel owl-carousel owl-theme -->
             </div><!-- /.container -->
         </section><!-- /.brand-one -->
-        <section class="mailchimp-one">
+        <section class="testimonials-one testimonials-one__home-three">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="mailchimp-one__content">
-                            <div class="mailchimp-one__icon">
-                                <i class="kipso-icon-email"></i><!-- /.kipso-icon-email -->
-                            </div><!-- /.mailchimp-one__icon -->
-                            <h2 class="mailchimp-one__title">Get latest updates </h2><!-- /.mailchimp-one__title -->
-                        </div><!-- /.mailchimp-one__content -->
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-6 d-flex">
-                        <div class="my-auto">
-                            <form action="#" class="mailchimp-one__form mc-form" data-url="MAILCHIMP_FORM_URL">
-                                <input type="text" id="mc-email" placeholder="Enter your email ">
-                                <button type="submit" class="thm-btn">Subscribe</button>
-                            </form><!-- /.mailchimp-one__form -->
-                            <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                        </div><!-- /.my-auto -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
+                <div class="block-title text-center">
+                    <h2 class="block-title__title">What our clients <br>
+                         say</h2><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+                <div class="blog-two__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-1.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Anne Hall</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-2.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Andre Obrien</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form, by injected humour.</p>
+                            <!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-3.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Shane Vasquez</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-4.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Maud Lee</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-5.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Barbara Kennedy</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form, by injected humour.</p>
+                            <!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-6.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Duane Carter</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-1.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Sally Green</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form.</p><!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-2.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Iva Santos</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="testimonials-one__single">
+                            <div class="testimonials-one__qoute">
+                                <img src="assets/images/qoute-1-1.png" alt="">
+                            </div><!-- /.testimonials-one__qoute -->
+                            <p class="testimonials-one__text">There are many variations of passages of lore ipsu available but
+                                the majority have suffered alteration in some form, by injected humour.</p>
+                            <!-- /.testimonials-one__text -->
+                            <img src="assets/images/team-1-3.jpg" alt="" class="testimonials-one__img">
+                            <h3 class="testimonials-one__name">Max Burns</h3><!-- /.testimonials-one__name -->
+                            <p class="testimonials-one__designation">Student</p><!-- /.testimonials-one__designation -->
+                        </div><!-- /.testimonials-one__single -->
+                    </div><!-- /.item -->
+                </div><!-- /.testimonials-one__carousel owl-carousel owl-theme -->
             </div><!-- /.container -->
-        </section><!-- /.mailchimp-one -->
+        </section><!-- /.testimonials-one -->
+        <section class="cta-five">
+            <img src="assets/images/team-1-1.jpg" class="cta-five__members-1" alt="">
+            <img src="assets/images/team-1-2.jpg" class="cta-five__members-2" alt="">
+            <img src="assets/images/team-1-3.jpg" class="cta-five__members-3" alt="">
+            <img src="assets/images/team-1-4.jpg" class="cta-five__members-4" alt="">
+            <img src="assets/images/team-1-5.jpg" class="cta-five__members-5" alt="">
+            <img src="assets/images/team-1-6.jpg" class="cta-five__members-6" alt="">
+
+            <div class="cta-five__bubble-1"><i class="fas fa-rocket"></i></div><!-- /.cta-five__bubble-1 -->
+            <div class="cta-five__bubble-2"><i class="fas fa-bolt"></i></div><!-- /.cta-five__bubble-2 -->
+            <div class="container text-center">
+                <h2 class="cta-five__title">Start growing with <br>
+                    our community</h2><!-- /.cta-five__title -->
+                <p class="cta-five__text">We are rich with advanced professionals</p><!-- /.cta-five__text -->
+                <a href="#" class="thm-btn cta-five__btn">Schedule a Meeting</a><!-- /.thm-btn cta-five__btn -->
+            </div><!-- /.container text-center -->
+        </section><!-- /.cta-five -->
         <footer class="site-footer">
             <div class="site-footer__upper">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-sm-12">
                             <div class="footer-widget footer-widget__contact">
-                                <h2 class="footer-widget__title">New Courses</h2><!-- /.footer-widget__title -->
+                                <h2 class="footer-widget__title">New Trainings</h2><!-- /.footer-widget__title -->
                                 <ul class="list-unstyled footer-widget__course-list">
                                     <li>
                                         <h2><a href="course-details.html">MERN Stack Development</a></h2>
@@ -717,34 +796,29 @@
                                 <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
                                 <div class="footer-widget__link-wrap">
                                     <ul class="list-unstyled footer-widget__link-list">
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">Staffs</a></li>
-                                        <li><a href="#">Our News</a></li>
+                                        <li><a href="#">Samrt Solutions</a></li>
+                                        <li><a href="#">Infrastructure Projects</a></li>
+                                        <li><a href="#">Exam.et</a></li>
+                                        <li><a href="#">Trainings</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">Experts</a></li>
                                     </ul><!-- /.footer-widget__link-list -->                                    
                                 </div><!-- /.footer-widget__link-wrap -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-3 -->
                         <div class="col-xl-3 col-lg-6 col-sm-12">
                             <div class="footer-widget footer-widget__gallery">
-                                <h2 class="footer-widget__title">Address</h2><!-- /.footer-widget__title -->
-                                <ul class="list-unstyled footer-widget__gallery-list">
-                                    <li><a href="#"><img src="assets/images/footer-1-1.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/images/footer-1-2.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/images/footer-1-3.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/images/footer-1-4.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/images/footer-1-5.png" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/images/footer-1-6.png" alt=""></a></li>
-                                </ul><!-- /.footer-widget__gallery -->
+                                <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d418.77544474808764!2d39.28256147309364!3d8.549863518284713!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzInNTkuMyJOIDM5wrAxNic1Ny4xIkU!5e1!3m2!1sen!2set!4v1689586056785!5m2!1sen!2set" width="240" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-3 -->
-                        <div class="col-xl-3 col-lg-6 col-sm-12">
+                        <div class="col-xl-3 col-lg-8 col-sm-12">
                             <div class="footer-widget footer-widget__about">
-                                <h2 class="footer-widget__title">About</h2><!-- /.footer-widget__title -->
-                                <p class="footer-widget__text">Lorem ipsum dolor sit ametcon, sectetur adipiscing elit.
-                                    Phasellus vehic sagittis euismod.</p><!-- /.footer-widget__text -->
+                                <h2 class="footer-widget__title">Divergent Technologies</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Learn from the top industry leaders, secure hands on experience on live projects at Divergent Technologies. 
+                                    Make your carear as a Data Scientist or chose a highly paid Research and Development Job.</p><!-- /.footer-widget__text -->
                                 <div class="footer-widget__btn-block">
-                                    <a href="#" class="thm-btn">Contact</a><!-- /.thm-btn -->                                   
+                                    <a href="#" class="thm-btn">Book a Meeting</a><!-- /.thm-btn -->                                   
                                 </div><!-- /.footer-widget__btn-block -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-3 -->
