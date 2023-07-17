@@ -79,19 +79,19 @@ WSGI_APPLICATION = 'divergTech.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgresql://postgres:E3pyhu1uJT2F0vhW7CaQ@containers-us-west-178.railway.app:5913/railway',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'E3pyhu1uJT2F0vhW7CaQ',
-        'HOST': 'containers-us-west-178.railway.app',
-        'PORT': 5913,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'URL': 'postgresql://postgres:E3pyhu1uJT2F0vhW7CaQ@containers-us-west-178.railway.app:5913/railway',
+    #     'NAME': 'railway',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'E3pyhu1uJT2F0vhW7CaQ',
+    #     'HOST': 'containers-us-west-178.railway.app',
+    #     'PORT': 5913,
+    # }
 }
 
 

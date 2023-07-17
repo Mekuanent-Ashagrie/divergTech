@@ -41,8 +41,8 @@
                         <a href="#">+2519-4522-4486</a>
                     </div><!-- /.topbar-one__left -->
                     <div class="topbar-one__right">
-                        <a href="#">Login</a>
-                        <a href="#">Register</a>
+                        <a href="#member">Membership</a>
+                        <a href="#testimonials">Testimonials</a>
                     </div><!-- /.topbar-one__right -->
                 </div><!-- /.container -->
             </div><!-- /.topbar-one -->
@@ -50,7 +50,7 @@
                 <div class="container clearfix">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="logo-box clearfix">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="#">
                             <img src="{% static 'website/assets/images/logo.png'%}" class="main-logo" width="128" alt="Awesome Image" />
                         </a>
                         <button class="menu-toggler" data-target=".main-navigation">
@@ -61,29 +61,31 @@
                     <div class="main-navigation">
                         <ul class=" navigation-box">
                             <li class="current">
-                                <a href="index.html">Home</a>
-                                
+                                <a href="#home">Home</a>                                
                             </li>
                             <li>
                                 <a href="#">Services</a>
                                 <ul class="sub-menu">
-                                    <li><a href="development.html">Software Development</a></li>
-                                    <li><a href="infrastructure.html">Infrastructure</a></li>
-                                    <li><a href="trainings.html">Training and Consultancy</a></li>
-                                    <li><a href="exams.html">National Exams</a></li>
+                                    <li><a href="#development">Software Development</a></li>
+                                    <li><a href="#infrastructure">Infrastructure</a></li>
+                                    <li><a href="#trainings">Training and Consultancy</a></li>
+                                    <li><a href="#exams">National Exams</a></li>
                                 </ul><!-- /.sub-menu -->
                             </li>
                             <li>
-                                <a href="teachers.html">Staffs</a>                               
+                                <a href="#about">About</a>                               
                             </li>
                             <li>
-                                <a href="events.html">Events</a>                               
+                                <a href="#staffs">Staffs</a>                               
                             </li>
                             <li>
-                                <a href="partners.html">Partners</a>                               
+                                <a href="#events">Events</a>                               
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="#partners">Partners</a>                               
+                            </li>
+                            <li>
+                                <a href="#footer">Contact</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -99,7 +101,7 @@
                 <!-- /.container -->
             </nav>
         </header><!-- /.site-header -->
-        <section class="slider-three">
+        <section class="slider-three" id="home">
             <img src="{% static 'website/assets/images/slider-3-icon-1-1.png'%}" class="slider-three__icon-1" alt="">
             <img src="{% static 'website/assets/images/slider-3-icon-1-2.png'%}" class="slider-three__icon-2" alt="">
             <img src="{% static 'website/assets/images/slider-3-icon-1-3.png'%}" class="slider-three__icon-3" alt="">
@@ -109,14 +111,12 @@
                 <div class="row">
                     <div class="col-lg-10">
                         <div class="slider-three__content">
-                            <p class="slider-three__tag-line">we can teach you anything</p><!-- /.slider-three__tag-line -->
-                            <h2 class="slider-three__title">Start learning
-                                with us now</h2><!-- /.slider-three__title -->
-                            <p class="slider-three__text">You need to be sure there isn't anything hidden in the middle of text
-                                lorem ipsum on the Internet.</p><!-- /.slider-three__text -->
+                            <p class="slider-three__tag-line">Technology for better lives</p><!-- /.slider-three__tag-line -->
+                            <h2 class="slider-three__title">Lets work together and change peoples life</h2><!-- /.slider-three__title -->
+                            <p class="slider-three__text">We make sure you get the maximum benefit from technological solutions for your bussines.</p><!-- /.slider-three__text -->
                             <form action="#" class="slider-three__search">
-                                <input type="text" placeholder="Search courses">
-                                <button type="submit"><i class="kipso-icon-magnifying-glass"></i>
+                                <!-- <input type="text" placeholder="Search courses">
+                                <button type="submit"><i class="kipso-icon-magnifying-glass"></i> -->
                                     <!-- /.kipso-icon-magnifying-glass --></button>
                             </form><!-- /.slider-three__search -->
                         </div><!-- /.slider-three__content -->
@@ -125,7 +125,7 @@
             </div><!-- /.container -->
         </section><!-- /.slider-three -->
 
-        <section class="about-two">
+        <section class="about-two" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-8">
@@ -188,7 +188,8 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.about-two -->
-        <section class="course-one__top-title home-one">
+
+        <section class="course-one__top-title home-one" id="trainings">
             <div class="container">
                 <div class="block-title mb-0">
                     <h2 class="block-title__title">Explore our <br>
@@ -196,7 +197,7 @@
                 </div><!-- /.block-title -->
             </div><!-- /.container -->
             <div class="course-one__top-title__curve"></div><!-- /.course-one__top-title__curve -->
-        </section><!-- /.course-one__top-title -->
+        </section><!-- /.course-one__top-title -->        
         <section class="course-one course-one__teacher-details home-one">
             <div class="container">
                 <div class="course-one__carousel owl-carousel owl-theme">
@@ -243,7 +244,8 @@
                 </div><!-- /.course-one__carousel -->
             </div><!-- /.container -->
         </section><!-- /.course-one course-page -->
-        <section class="video-two">
+
+        <section class="video-two"  id="exams">
             <div class="container">
                 <img src="{% static 'website/assets/images/slider-1-scratch.png'%}" class="video-two__scratch" alt="">
                 <div class="row">
@@ -264,7 +266,8 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.video-two -->
-        <section class="countdown-one">
+
+        <section class="countdown-one" id="member">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -284,11 +287,12 @@
                                     Become a premium member
                                 </h2><!-- /.become-teacher__form-title -->
                             </div><!-- /.become-teacher__top -->
-                            <form action="assets/inc/sendemail.php" class="become-teacher__form-content contact-form-validated">
+                            <form action="addmember/" method="post" class="become-teacher__form-content">
+                                {% csrf_token %}
                                 <input type="text" placeholder="Your Name" name="name">
                                 <input type="text" placeholder="Email Address" name="email">
                                 <input type="text" placeholder="Phone Number" name="phone">
-                                <input type="text" placeholder="Comment" name="message">
+                                <input type="text" placeholder="Your Message" name="message">
                                 <button type="submit" class="thm-btn become-teacher__form-btn">Apply For It</button>
                             </form><!-- /.become-teacher__form-content -->
                             <div class="result text-center"></div><!-- /.result -->
@@ -297,7 +301,8 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.countdown-one -->
-        <section class="thm-gray-bg course-category-one">
+
+        <section class="thm-gray-bg course-category-one" id="development">
             <div class="container-fluid text-center">
                 <div class="block-title text-center">
                     <h2 class="block-title__title">Our Smart Solutions</h2><!-- /.block-title__title -->
@@ -398,7 +403,8 @@
                 <a href="#" class="thm-btn">View All</a><!-- /.thm-btn -->
             </div><!-- /.container-fluid -->
         </section><!-- /.thm-gray-bg course-category-one -->
-        <section class="cta-three">
+
+        <section class="cta-three" id="infrastructure">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 clearfix">
@@ -432,8 +438,9 @@
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.cta-three -->        
-        <section class="blog-two">
+        </section><!-- /.cta-three -->  
+
+        <section class="blog-two" id="events">
             <div class="container">
                 <div class="block-title text-center">
                     <h2 class="block-title__title">latest Events</h2><!-- /.block-title__title -->
@@ -595,7 +602,8 @@
                 </div><!-- /.blog-two__carousel owl-carousel owl-theme -->
             </div><!-- /.container -->
         </section><!-- /.blog-one blog-page -->
-        <section class="brand-two ">
+
+        <section class="brand-two" id="partners">
             <div class="container">
                 <div class="block-title">
                     <h2 class="block-title__title">Our partners</h2><!-- /.block-title__title -->
@@ -634,7 +642,8 @@
                 </div><!-- /.brand-one__carousel owl-carousel owl-theme -->
             </div><!-- /.container -->
         </section><!-- /.brand-one -->
-        <section class="testimonials-one testimonials-one__home-three">
+
+        <section class="testimonials-one testimonials-one__home-three" id="testimonials">
             <div class="container">
                 <div class="block-title text-center">
                     <h2 class="block-title__title">What our clients <br>
@@ -755,7 +764,8 @@
                 </div><!-- /.testimonials-one__carousel owl-carousel owl-theme -->
             </div><!-- /.container -->
         </section><!-- /.testimonials-one -->
-        <section class="cta-five">
+
+        <section class="cta-five" id="staffs">
             <img src="assets/images/team-1-1.jpg" class="cta-five__members-1" alt="">
             <img src="assets/images/team-1-2.jpg" class="cta-five__members-2" alt="">
             <img src="assets/images/team-1-3.jpg" class="cta-five__members-3" alt="">
@@ -772,7 +782,8 @@
                 <a href="#" class="thm-btn cta-five__btn">Schedule a Meeting</a><!-- /.thm-btn cta-five__btn -->
             </div><!-- /.container text-center -->
         </section><!-- /.cta-five -->
-        <footer class="site-footer">
+
+        <footer class="site-footer" id="footer">
             <div class="site-footer__upper">
                 <div class="container">
                     <div class="row">

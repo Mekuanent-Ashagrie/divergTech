@@ -1,9 +1,5 @@
 from django.db import models
-from django.utils import timezone
-from django.contrib import admin
-import datetime
 
-# Create your models here.
 class Category(models.Model):
     category_name = models.CharField(max_length=200)
     category_image = models.ImageField(upload_to='media/')
@@ -40,3 +36,32 @@ class Curriculum(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     content = models.CharField(max_length=200)
     
+class Software(models.Model):
+    software_name = models.CharField(max_length=200)
+    software_description = models.CharField(max_length=2000)
+    software_is_free = models.BooleanField()
+    software_image = models.ImageField(upload_to='media/')
+
+class Event(models.Model):
+    event_name = models.CharField(max_length=200)
+    event_description = models.CharField(max_length=2000)
+    event_date = models.DateField()
+    event_image = models.ImageField(upload_to='media/')
+    event_posted_by = models.CharField(max_length=200)
+    event_views = models.IntegerField()
+
+class Partner(models.Model):
+    partner_name = models.CharField(max_length=200)    
+    partner_image = models.ImageField(upload_to='media/')
+
+class Testimonial(models.Model):
+    client_name = models.CharField(max_length=200)
+    client_testemonial = models.CharField(max_length=2000)
+    client_company = models.CharField(max_length=150)
+    client_image = models.ImageField(upload_to='media/')
+
+class Member(models.Model):
+    member_name = models.CharField(max_length=200)
+    member_email = models.EmailField()
+    member_phone = models.IntegerField()
+    member_message = models.CharField(max_length=2000)

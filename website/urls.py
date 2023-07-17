@@ -5,4 +5,5 @@ app_name = "website"
 urlpatterns = [
     path('', views.HomeView.as_view(), name='Home'),
     path('home', views.HomeView.as_view(), name='Home'),
+    path('addmember/', views.addmember, name='addmember'),
 ]
