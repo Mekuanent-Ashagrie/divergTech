@@ -45,7 +45,8 @@ class Software(models.Model):
 class Event(models.Model):
     event_name = models.CharField(max_length=200)
     event_description = models.CharField(max_length=2000)
-    event_date = models.DateField()
+    event_date = models.IntegerField()
+    event_month = models.CharField(max_length=10, default='Jan')
     event_image = models.ImageField(upload_to='media/')
     event_posted_by = models.CharField(max_length=200)
     event_views = models.IntegerField()
